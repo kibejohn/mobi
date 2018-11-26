@@ -40,7 +40,7 @@ def processRequest(req):
      "source": "Yahoo Weather"
     }
     api_key = "QnV7pOhKXpuOQVJjus5Y9OcD0A2OQUu2"
-    baseurl ="http://dataservice.accuweather.com/forecasts/v1/daily/1day/'{}'?apikey='{}'&language=en-us&details=false&metric=false".format{woeid,api_key}
+    baseurl ="http://dataservice.accuweather.com/forecasts/v1/daily/1day/'{}'?apikey='{}'&language=en-us&details=false&metric=false".format(woeid,api_key)
     #yql_url = baseurl + urlencode({'q': woeid}) + "&format=json"
     try:
         result = urlopen(baseurl).read()
